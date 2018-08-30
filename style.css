@@ -1,0 +1,390 @@
+/* ------------------------------------------------ */
+/* RESET */
+/* ------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------ */
+/* GENERAL */
+/* ------------------------------------------------ */
+body {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: "Lora", serif;
+    font-size: 18px;
+    line-height: 1.68em;
+    color: #313132;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
+b, strong {font-weight: bold;}
+dfn, cite, em, i {font-style: italic;}
+a {
+    border-bottom: 1px dotted #06C;
+    color: #06C;
+    text-decoration: none
+}
+a:hover {
+    border-bottom-color: #28e;
+    color: #28e;
+}
+
+
+/* ------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------ */
+header#title {
+    text-align: center;
+}
+header#title h1 {
+    display: inline-block;
+    padding: 10px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #DE4242;
+    font-size: 65px;
+}
+header#title h2{
+    display: inline-block;
+    margin: 12px 10px 5px 10px;
+    font-weight: bold;
+    color: #595959;
+    font-family: "Lora", serif;
+    font-size: 25px;
+    cursor: default;
+}
+header#title a{
+    text-decoration: none;
+    border: none;
+}
+
+
+/* ------------------------------------------------ */
+/* NAVIGATION MENU */
+/* ------------------------------------------------ */
+nav#menu{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #EFEFEF;
+    margin: 20px 0 30px 0;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+}
+nav#menu ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #989898;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: default;
+}
+nav#menu ul li a{
+    text-decoration: none;
+    border-bottom: none;
+    color: #989898;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+nav#menu ul li a:hover {color: #DE4242;}
+nav#menu ul li#active_page a { color: #DE4242; }
+
+nav#menu ul li a:hover {color: #DE4242;}
+nav#menu ul li#active_page a:hover { color: #DE4242; }
+
+/* ------------------------------------------------ */
+/* CONTENT */
+/* ------------------------------------------------ */
+/* General */
+section#content {margin-bottom: 10px;}
+section#content p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+section#content code,
+section#content kbd {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 16px;
+    padding: 1px 4px 2px 4px;
+    border-radius: 2px;
+}
+section#content code{background-color: #F2F2F2;}
+section#content kbd {
+    background:#313132;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+section#content pre {
+    margin: 30px 0 30px -27px;
+    padding: 0 20px;
+    overflow: auto;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #313132;
+    border-left: 5px solid #DE4242;
+    line-height: 1.4;
+}
+
+section#content ul,
+section#content ol {margin-left: 40px;}
+section#content ul {list-style: circle;}
+section#content ol {list-style: decimal;}
+section#content dl {margin: 20px 0;}
+section#content dt {color: #989898; font-weight: bold;}
+section#content dd {margin: 0 25px 15px 25px;}
+
+section#content blockquote {
+    margin: 40px 30px 30px 40px;
+    position: relative;
+    color: #989898;
+    font-size: 20px;
+    font-style: italic;
+}
+section#content blockquote:before {
+    position: absolute;
+    top: 30px;
+    left: -70px;
+    content: "“";
+    color: #DE4242;
+    font-size: 120px;
+}
+section#content blockquote cite {
+    display: block;
+    padding: 10px 30px 0 0;
+    text-align: right;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: #989898;
+}
+section#content blockquote cite a,
+section#content blockquote cite a:hover {
+    color: #989898;
+    text-decoration: none;
+    border: none;
+}
+
+section#content abbr, acronym {
+    border-bottom: 1px dotted #F2F2F2;
+    cursor: help;
+}
+
+section#content mark, ins {
+    background-color: #FFF9C0;
+    text-decoration: none;
+}
+
+section#content sup,
+section#content sub {
+    height: 0;
+    line-height: 0;
+    position: relative;
+    font-size: 75%;
+    vertical-align: baseline;
+}
+section#content sup {bottom: 1ex;}
+section#content sub {top: .5ex;}
+
+section#content hr {
+    margin: 30px 100px;
+    height: 1px;
+    border: 0;
+    background-color: #F2F2F2;
+}
+
+section#content table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+section#content th {
+    text-align: left;
+    border-bottom: 3px solid #989898;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+section#content td {
+    border-bottom: 1px solid #F2F2F2;
+}
+section#content th,
+section#content td {
+    padding: 7px;
+}
+section#content tr:hover {
+    background-color: transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+}
+section#content tr:hover {
+    background-color: #F7F7F7;
+}
+section#content img {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+section#content h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #DE4242;
+}
+section#content h1 a {
+    color: #DE4242;
+    text-decoration: none;
+    border-bottom: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+section#content h1 a:hover {color: #313132;}
+
+section#content h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+section#content h2 a {
+    color: #313132;
+    text-decoration: none;
+    border-bottom: none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+}
+section#content h2 a:hover {color: #DE4242;}
+
+/* Index page, presentation */
+section#content div.top {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+section#content div.top p { margin: 0; }
+section#content div.top img { margin: 10px 20px 10px 0; }
+
+/* Publication items */
+section#content ol#publications {
+    margin: 0;
+    padding: 0;
+}
+section#content ol#publications li {
+    margin-left: 80px;
+    padding-left: 15px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+section#content ol#publications li span.title {
+    text-align: justify;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #595959;
+    font-family:"Open Sans", sans-serif;
+}
+section#content ol#publications li span.authors {
+    display: block;
+    font-style: italic;
+    color: #989898;
+}
+section#content ol#publications li span.authors mark {
+    color: #595959;
+}
+section#content ol#publications li span.journal {
+    display: block;
+}
+section#content ol#publications li span.more {
+    font-size: 16px;
+    cursor: default;
+    display: block;
+    color:#DE4242;
+}
+section#content ol#publications li span.more a {
+    color:#DE4242;
+    text-decoration: none;
+    border: none;
+}
+
+/* ------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------ */
+footer {
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: 1px solid #F2F2F2;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #989898;
+}
+
+/* ------------------------------------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------------------------------------ */
+img,video,audio,embed,object {max-width: 90%;}
+img,video,embed,object {height: auto;}
+embed,object {height: 100%;}
+img {
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media (max-width: 767px) {
+    section#content div.top {display: block; text-align: center; margin-bottom: 50px;}
+    section#content div.top img { margin: 10px auto; }
+}
