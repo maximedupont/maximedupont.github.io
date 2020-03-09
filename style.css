@@ -79,22 +79,23 @@ header#title {
 }
 header#title h1 {
     display: inline-block;
-    padding: 10px;
-    line-height: 1;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #DE4242;
-    font-size: 65px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #313132;
+    font-size: 45px;
+    vertical-align: middle;
 }
 header#title h2{
     display: inline-block;
-    margin: 12px 10px 5px 10px;
-    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 12px;
+    font-weight: light;
     color: #595959;
-    font-family: "Lora", serif;
-    font-size: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
     cursor: default;
+    vertical-align: middle;
 }
 header#title a{
     text-decoration: none;
