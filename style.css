@@ -274,7 +274,7 @@ section#content img {
 
 section#content h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -293,7 +293,7 @@ section#content h1 a:hover {color: #313132;}
 
 section#content h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.2;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -313,10 +313,10 @@ section#content h2 a:hover {color: #DE4242;}
 section#content div.top {
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 30px;
     font-style: italic;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
 }
 section#content div.top p { margin: 0; }
 section#content div.top img { margin: 10px 20px 10px 0; }
@@ -327,7 +327,7 @@ section#content ol#publications {
     padding: 0;
 }
 section#content ol#publications li {
-    margin-left: 80px;
+    margin-left: 60px;
     padding-left: 15px;
     margin-right: 40px;
     margin-bottom: 30px;
@@ -361,6 +361,79 @@ section#content ol#publications li span.more a {
     color:#DE4242;
     text-decoration: none;
     border: none;
+}
+
+/* Keywords */
+section#content div#keywords {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+section#content div#keywords span#title {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:"Open Sans", sans-serif;
+}
+section#content div#keywords ul {
+    display: block;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+section#content div#keywords li {
+    display: inline;
+    vertical-align: text-top;
+    padding: 4px 6px;
+    margin: 5px 10px 0 0;
+    font-size: 15px;
+    background-color: #EFEFEF;
+    color: #313132;
+    font-family:"Open Sans", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Methods */
+section#content div#methods {
+    display: flex;
+    align-items: center;
+}
+section#content div#methods span#title {
+    width: 100px;
+    display: block;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:"Open Sans", sans-serif;
+}
+
+/* Research interests */
+section#content div.project {
+    display: block;
+    margin-bottom: 30px;
+}
+
+section#content div.project img {
+    margin: 0 20px 10px 20px;
+    display: inline;
+}
+section#content div.project img.left { float: left; }
+section#content div.project img.right { float: right; }
+section#content div.project img.center {
+    margin: auto;
+    display: block;
+}
+
+section#content div.project ul {
+    list-style: none;
+    margin-top: 10px;
+}
+section#content div.project li span.title {
+    font-family:"Open Sans", sans-serif;
+    font-weight: bold;
 }
 
 /* ------------------------------------------------ */
