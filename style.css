@@ -173,7 +173,7 @@ section#content pre {
 }
 
 section#content ul,
-section#content ol {margin-left: 40px;}
+section#content ol {margin-left: 70px;}
 section#content ul {list-style: circle;}
 section#content ol {list-style: decimal;}
 section#content dl {margin: 20px 0;}
@@ -367,12 +367,14 @@ section#content ol#publications li span.more a {
 section#content div#keywords {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    padding: 0 30px;
 }
 section#content div#keywords span#title {
+    text-align: center;
     display: block;
     margin-right: 20px;
     margin-bottom: 25px;
+    width: 150px;
     font-weight: bold;
     font-size: 20px;
     font-family:"Open Sans", sans-serif;
@@ -400,8 +402,10 @@ section#content div#keywords li {
 section#content div#methods {
     display: flex;
     align-items: center;
+    padding: 0 30px;
 }
 section#content div#methods span#title {
+    text-align: center;
     width: 100px;
     display: block;
     margin-right: 20px;
@@ -462,4 +466,6 @@ img {
 @media (max-width: 767px) {
     section#content div.top {display: block; text-align: center; margin-bottom: 50px;}
     section#content div.top img { margin: 10px auto; }
+    section#content ul,
+    section#content ol {margin-left: 50px;}
 }
