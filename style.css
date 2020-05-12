@@ -467,5 +467,6 @@ img {
     section#content div.top {display: block; text-align: center; margin-bottom: 50px;}
     section#content div.top img { margin: 10px auto; }
     section#content ul,
-    section#content ol {margin-left: 50px;}
+    section#content ol {margin-left: 40px;}
+    section#content div#keywords { padding: 0 10px; }
 }
