@@ -310,7 +310,7 @@ section#content h2 a {
 section#content h2 a:hover {color: #DE4242;}
 
 /* Index page, presentation */
-section#content div.top {
+section#content div#top {
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -318,8 +318,12 @@ section#content div.top {
     margin-bottom: 30px;
     font-size: 19px;
 }
-section#content div.top p { margin: 0; }
-section#content div.top img { margin: 10px 20px 10px 0; }
+section#content div#top #txt { margin: 0; }
+section#content div#top img { margin: 10px 20px 10px 0; }
+section#content div#top #txt p {
+    display: block;
+    margin: 0 0 15px 0;
+}
 
 /* Publication items */
 section#content ol#publications {
@@ -363,58 +367,7 @@ section#content ol#publications li span.more a {
     border: none;
 }
 
-/* Keywords */
-section#content div#keywords {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-}
-section#content div#keywords span#title {
-    text-align: center;
-    display: block;
-    margin-right: 20px;
-    margin-bottom: 25px;
-    width: 150px;
-    font-weight: bold;
-    font-size: 20px;
-    font-family:"Open Sans", sans-serif;
-}
-section#content div#keywords ul {
-    display: block;
-    padding: 0;
-    margin: 0 0 30px 0;
-}
-section#content div#keywords li {
-    display: inline;
-    vertical-align: text-top;
-    padding: 4px 6px;
-    margin: 5px 10px 0 0;
-    font-size: 15px;
-    background-color: #EFEFEF;
-    color: #313132;
-    font-family:"Open Sans", sans-serif;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Methods */
-section#content div#methods {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-}
-section#content div#methods span#title {
-    text-align: center;
-    width: 100px;
-    display: block;
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 20px;
-    font-family:"Open Sans", sans-serif;
-}
-
-/* Research interests */
+/* Projects */
 section#content div.project {
     display: block;
     margin-bottom: 30px;
@@ -433,7 +386,7 @@ section#content div.project img.center {
 
 section#content div.project ul {
     list-style: none;
-    margin-top: 10px;
+    margin: 10px 0 0 32px;
 }
 section#content div.project li span.title {
     font-family:"Open Sans", sans-serif;
@@ -464,9 +417,19 @@ img {
 }
 
 @media (max-width: 767px) {
-    section#content div.top {display: block; text-align: center; margin-bottom: 50px;}
-    section#content div.top img { margin: 10px auto; }
+    section#content div#top {display: block; text-align: center; margin-bottom: 50px;}
+    section#content div#top img { margin: 10px auto; }
     section#content ul,
     section#content ol {margin-left: 40px;}
-    section#content div#keywords { padding: 0 10px; }
+
+    section#content div.project img.left {
+        float: none;
+        display:block;
+        margin: 10px auto;
+    }
+    section#content div.project img.right {
+        float: none;
+        display:block;
+        margin: 10px auto;
+    }
 }

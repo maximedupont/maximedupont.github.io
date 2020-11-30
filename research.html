@@ -7,7 +7,7 @@
     <title>Maxime Dupont: Research</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -26,44 +26,87 @@
 <nav id="menu">
     <ul>
           <li><a href="index.html"><i class="fas fa-address-card"></i> About Me</a></li>
-          <li id="active_page"><a href="research.html"><i class="fas fa-hashtag"></i> Research</a></li>
+          <li id="active_page"><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
           <li><a href="publications.html"><i class="fas fa-file-alt"></i> Publications</a></li>
           <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
 </nav><section id="content">
 
 <p>
-    My research interests have been centered around physics so far, in particular in the area of condensed matter theory, with a focus on strongly interacting quantum systems. This branch of physics aims at understanding the properties of <mark>quantum matter</mark>. Especially, I have worked on quantum phases and transitions, dynamics and transport in quantum systems as well as disorder in quantum many-body systems. I have also closely collaborated with people performing experiments on quantum materials, against which theoretical models and predictions could be checked.
+    Individual particles governed by the laws of quantum mechanics behave very differently when part of a larger group. My research seeks to understand how their collective behavior leads to remarkable emergent <mark>quantum phenomena</mark>. To this end, I study a variety of problems at the frontiers of condensed matter physics and quantum information.
+</p>
+<p>
+    My interests include magnetic, bosonic, and topological phases of matter, phase transitions, disorder-induced physics, and the dynamics of quantum systems. I have built up expertise in large-scale and high-performance simulations involving Monte Carlo, tensor networks, linear algebra, and recently neural networks.
+</p>
+<p>
+    Some of my research projects are featured below. You can also take a look at my <a href="publications.html">list of publications</a>.
 </p>
 
-<div id="keywords">
-    <span id="title"><i class="fa fa-tags"></i> Keywords</span>
-    <ul>
-        <li>quantum physics</li>
-        <li>condensed matter theory</li>
-        <li>strongly correlated systems</li>
-        <li>numerical simulations</li>
-        <li>quantum matter</li>
-        <li>quantum dynamics</li>
-        <li>disordered systems</li>
-        <li>experimental collaborations</li>
+<h1>Highlighted projects</h1>
+
+<h2>Topological paramagnets</h2>
+
+<div class="project">
+    <img class="left" src="topo_stripes.png" width="250px" />
+    <p>
+        We studied what happens when one drives a paramagnetic system from a topological state to a trivial state. The only option to connect these two distinct states is via a quantum phase transition. Surprisingly, the transition never occurs as a single point when interpolating from one phase to the other. Instead, a whole new phase emerges where magnetic order settles in, sandwiched between the topological and trivial paramagnetic ones.
+    </p>
+    <p>
+        The most remarkable case is when the magnetic order takes the form of a stripe pattern that is incommensurate with the two-dimensional lattice. Moving to a coarse-grained picture, the interfaces between these stripes behave analogously to electric fields. They are subject to the laws of electrodynamics in the form of a deconfined $\mathrm{U}(1)$ gauge theory.
+    </p>
+    <ul class="fa-ul">
+        <li><span class="title"><i class="fa-li fas fa-users"></i>Collaborator:</span> Snir Gazit and Thomas Scaffidi</li>
+        <li><span class="title"><i class="fa-li fas fa-file-alt"></i>Relevant publication:</span> <a href="https://arxiv.org/abs/2008.06509">arXiv:2008.06509</a> and <a href="https://arxiv.org/abs/2008.11206">arXiv:2008.11206</a></li>
     </ul>
 </div>
 
-<p>
-    To address such stimulating problems, I take advantage of large-scale, high-performance numerical simulations using <mark>Python</mark> and <mark>C++</mark>. This includes,
-    <ul>
-        <li>Working with linear algebra based techniques,</li>
-        <li>Developing Monte Carlo methods,</li>
-        <li>Solving challenging optimization problems,</li>
-        <li>Performing statistical analysis over large amount of datasets to extract relevant information and make predictions.</li>
+<h2>Emergent hydrodynamics in quantum magnets</h2>
+
+<div class="project">
+    <img class="right" src="hydro_regimes.png" width="350px" />
+    <p>
+        Some quantum many-body systems display emergent coarse-grained hydrodynamic behavior. Depending on the intrinsic quantum conservation laws of the system, one expects different kinds of fluid-like behaviors. Remarkably, a class of 1D quantum systems, known as integrable, possesses an infinite number of nontrivial conserved quantities which can endow them with peculiar transport properties, especially at high temperatures.
+    </p>
+    <p>
+        We classified the different hydrodynamic regimes for 1D quantum magnets. They are characterized by the dynamical exponent $z$, governing the length-time scaling: $z=2$ corresponds to diffusion, $z=1$ to ballistic, and $z=3/2$ to superdiffusive dynamics. The last scenario is the most puzzling. It was numerically conjectured to belong to the Kardar-Parisi-Zhang universality class in 1+1 dimensions. It is well-known in the statistical physics community to describe a wide range of phenomena like interface growth, quantum circuits, and even traffic flow. With experimentalists, we worked on observing this hydrodynamical regime with neutron scattering in a 1D spin-1/2 Heisenberg compound. We found that the spin dynamics are well described by the dynamical exponent $z=3/2$ confirming the recent theoretical conjecture.
+    </p>
+    <ul class="fa-ul">
+        <li><span class="title"><i class="fa-li fas fa-users"></i>Collaborator:</span> Garrett E. Granroth, Joel E. Moore, Stephen E. Nagler, Allen Scheie, Nicholas E. Sherman, Matthew B. Stone, and David A. Tennant</li>
+        <li><span class="title"><i class="fa-li fas fa-file-alt"></i>Relevant publication:</span> <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.121106">Phys. Rev. B 101, 121106(R) (2020)</a> and <a href="https://arxiv.org/abs/2009.13535">arXiv:2009.13535</a></li>
     </ul>
-</p>
+</div>
 
-<p>
-    To get a complete picture, you can take a look at my <a href="publications.html">publication list</a>! :-)
-</p>
+<h2>Disorder-induced Bose-Einstein condensation</h2>
 
+<div class="project">
+    <img class="left" src="bec_disorder.png" width="400px" />
+    <p>
+        Quantum magnets can realize emergent bosonic phases of matter. Upon applying a strong magnetic field, the spin-1 compound $\mathrm{NiCl}_2-4\mathrm{SC}(\mathrm{NH}_2)_2$ realizes a Bose-Einstein condensate. Doped with $\mathrm{Br}$, randomly substituting $\mathrm{Cl}$ atoms, disorder is introduced in the form of modified exchange couplings between the spins. Randomness often diminishes the quantum coherence and can destroy it entirely if it is strong enough. Here, the disorder was believed to induce the so-called Bose glass phase: a compressible, gapless, and incoherent bosonic quantum fluid.
+    </p>
+    <p>
+        In collaboration with experimentalists, we investigated the interplay between disorder and interactions in this compound. Based on NMR measurements, we first built a lattice spin model for this material. Then, we addressed the stability of the Bose glass phase and found that instead of destroying the quantum coherence, the disorder induces a revival of coherence at high magnetic fields. We predicted a new, counterintuitive phase of matter: a disorder-induced Bose-Einstein condensation, and we pinned down its microscopic mechanism. It was later experimentally observed, in agreement with the theoretical model.
+    </p>
+    <ul class="fa-ul">
+        <li><span class="title"><i class="fa-li fas fa-users"></i>Collaborators:</span> Claude Berthier, Rémi Blinder, Sylvain Capponi, Mladen Horvatić, Edwin Kermarrec, Steffen Krämer, Nicolas Laflorencie, Hadrien Mayaffre, Anna Orlova, and Armando Paduan-Filho</li>
+        <li><span class="title"><i class="fa-li fas fa-file-alt"></i>Relevant publications:</span> <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.067204">Phys. Rev. Lett. 118, 067204 (2017)</a>, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.067203">Phys. Rev. Lett. 118, 067203 (2017)</a>, <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.024442">Phys. Rev. B 96, 024442 (2017)</a>, and <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.177202">Phys. Rev. Lett. 121, 177202 (2018)</a></li>
+    </ul>
+</div>
+
+<h2>Probing quantum matter</h2>
+
+<div class="project">
+    <img class="left" src="nmr_t1.png" width="400px" />
+    <p>
+        Many condensed matter probes are frequency-resolved and thus related to time-dependent quantities, e.g., neutron scattering, optical conductivity, NMR relaxation rate. It is paramount to theoretically access them and understand how they behave in different phases of matter.
+    </p>
+    <p>
+        We addressed this question for quantum magnets, from purely 1D systems to realistic 3D ones, by gradually increasing the strength of the coupling between spin chains. A perfect chain described by the Tomonaga-Luttinger Liquid quantum field theory will result in the NMR relaxation rate diverging as a power-law with the temperature $T$ at low temperature, $\propto T^{-\alpha}$. The exponent $\alpha$ is related to a field theory parameter, which is made experimentally accessible. Because residual 3D couplings are intrinsic to materials, we studied how they affect the genuine 1D behavior, making experimental estimations of the field theory parameter more precise. A finite 3D coupling also introduces a finite-temperature phase transition in the system. We determined the behavior of the NMR relaxation around it, down to the ordered phase.
+    </p>
+    <ul class="fa-ul">
+        <li><span class="title"><i class="fa-li fas fa-users"></i>Collaborators:</span> Sylvain Capponi, Nicolas Laflorencie, and Edmond Orignac</li>
+        <li><span class="title"><i class="fa-li fas fa-file-alt"></i>Relevant publications:</span> <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.144409">Phys. Rev. B 94, 144409 (2016)</a> and <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.094403">Phys. Rev. B 98, 094403 (2018)</a></li>
+    </ul>
+</div>
 
 </section>
 <footer>
